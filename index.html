@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Amazing Page about Croatia</title>
+		<link rel="shortcut icon" type="image/ico" href="img/cro.ico">
+		<link href="https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap" rel="stylesheet">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js">
+		</script>
+		<link rel="stylesheet" href="style.css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+
+		<style>
+			
+			header {
+				
+				 background-color: rgba(0, 0, 0, .7);
+				 position: fixed;
+				 z-index: 10;
+				 top: 0;
+				 left: 0;
+				 width: 100%;
+				 color: #fff;
+				 padding: 35px 100px 20px;
+
+
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+			}
+
+			header a {
+				  text-decoration: none;
+				  color: white;
+				  opacity: .6;
+				  cursor: pointer;
+				}
+				 
+				header a:hover {
+				  opacity: 1;
+				}
+				 
+				header nav ul {
+				  font-size: 14px;
+				  display: flex;
+				  flex-direction: row;
+				  justify-content: flex-end;
+				}
+				 
+				header nav li {
+				  margin: 0 6px;
+				}
+				 
+				header nav li:first-child {
+				  margin-left: 0;
+				}
+				 
+				header nav li:last-child {
+				  margin-right: 0;
+}
+
+			@media(max-width:1000px) {
+				  header {
+				    text-align: center;
+				    flex-direction: column;
+				    padding: 20px 50px;
+				  }
+				  header img {
+				  	max-width: 30px;
+				   
+				  }
+				  header nav {
+				    justify-content: space-around;
+				  }
+				  header h2 {
+				  	
+				    margin-bottom: 15px;
+
+				  }
+				}	
+
+		</style>
+
+
+	</head>
+
+		
+		<!--*************************** T O P ***********************************-->
+
+	<body id="top">
+
+	<header>
+		
+		<h2><a href="#" target="_blank"><img src="img/shark.png"></a></h2>
+
+		<nav>
+			<ul>
+
+				<li><a href="#top"> Top </a></li>
+				<li><a href="#about"> About </a></li>
+				<li><a href="#gallery"> Gallery </a></li>
+				<li><a href="#getting-around"> Travel </a></li>
+				<li><a href="#famous-quotes"> Quotes </a></li>
+				<li><a href="#contact"> Contact </a></li>
+				<li><a href="#social-media"> Links </a></li>
+
+			</ul>
+
+		</nav>
+
+
+
+	</header>
+<!--***********************************************************-->
+
+		<div id="hero">
+			<div class="background-image"></div>
+			<h1>Beautiful Croatia Photo Portfolio</h1>
+			<h3>Breathtaking Landscapes for Your Viewing Pleasure</h3>
+			<a href="https://www.instagram.com/ivan_rozic/?hl=hr" class="btn" target="_blank"> More photos </a>
+
+		</div>	
+		<!--****************************** A B O U T *****************************-->
+
+		<div id="about">
+			<h3 class="title"> About Me </h3>
+			<div id=two-cols>
+				<div class="about-img"><img src="img/about.jpg" alt="thumbs up"></div>
+				<div class="about-bio">
+					<p>Hello! My name is <b>Ivan Rožić.</b><br>
+						I am student of Information Security and Digital Forensics. Very calm and polite person. Love photography, technology and sports.
+					I enjoy taking photos then editing them in Adobe Photoshop Lightroom.</p>
+				</div>
+				
+				<p>&nbsp;</p>
+
+			</div>
+
+			<hr>
+
+		</div>
+
+		<!--********************** G A L L E R Y ***************************** -->
+
+		<div id="gallery" class="photo-gallery">
+
+			<h3 class="title"> Gallery </h3>
+			<p>All photos are mine. Mostly shot on smartphone. I hope you like it.</p>
+			<hr>
+			<ul class="grid">
+				<li class="small" style="background-image: url('img/katedrala.jpg');"></li>
+				<li class="large" style="background-image: url('img/pozdrav_suncu.jpg');"></li>
+				<li class="small" style="background-image: url('img/zalazak19.jpg');"></li>
+				<li class="large" style="background-image: url('img/zadar19.jpg');"></li>
+
+
+			</ul>	
+
+
+		</div>
+		<hr>
+
+		<!--***************************************************************** -->
+
+		<div id="getting-around">
+			<h3 class="title" > Ways of Traveling </h3>
+
+			<p>Here are three ways you can use to travel around Croatia represented by font awesome icons. There are many more ways of traveling, but here are three that fit nicely in this section and have icons that you can manipulate like fonts in CSS.</p>
+
+			<ul class="grid">
+
+				<li><i class="fas fa-plane ico"></i><h4>Airplane</h4><p>A powered flying vehicle with fixed wings and a weight greater than that of the air it displaces.</p></li>
+				<li><i class="fas fa-ship ico"></i><h4>Cruise Ships</h4><p>A passenger ship used for pleasure voyages, where the voyage itself and the ship's amenities are a part of the experience.</p></li>
+				<li><i class="fas fa-taxi ico"></i><h4>Taxis</h4><p>A motor vehicle licensed to transport passengers in return for payment of a fare.</p></li>
+
+			</ul>
+
+		</div>
+		
+		
+		<!--************************************************************** -->
+
+
+		<div id="famous-quotes">
+			<hr>
+			<h3 class="title"> What Others Say </h3>
+			<p class="portrait"> <img src="img/dickens.jpg" alt = "Charles Dickens" class="portrait-photos"> </p>
+			<p class="quote">&ldquo; No one is useless in this world who lightens the burden of it to anyone else.&rdquo;</p>
+			<p class="author">&mdash; Charles Dickens   </p>
+			<p class="portrait"> <img src="img/franklin.jpg" alt = "Benjamin Franklin" class="portrait-photos"> </p>
+			<p class="quote">&ldquo; An investment in knowledge pays the best interest.&rdquo;</p>
+			<p class="author">&mdash; Benjamin Franklin </p>
+			<p class="portrait"> <img src="img/leonardo.jpg" alt = "Leonardo da Vinci" class="portrait-photos"> </p>
+			<p class="quote">&ldquo; Learning never exhausts the mind.&rdquo;</p>
+			<p class="author">&mdash; Leonardo da Vinci </p>
+
+			
+			
+		</div>
+		<hr>
+
+		<!--************************************************************* -->
+
+		<div id="contact">
+			<h3 class="title"> My Studio Location </h3>
+			<section class=""flexbox-section>
+				<p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2911.5166639210247!2d17.28243101548102!3d43.13567877914238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134afe1f30b97623%3A0xaac1013a06f61de6!2sBilaje%2028%2C%2021335%2C%20Podaca!5e0!3m2!1shr!2shr!4v1573855674620!5m2!1shr!2shr" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen> </iframe>
+				</p>
+				<p>
+					Bilaje 28
+					Podaca, 21335
+					Croatia
+				</p>
+			</section>
+		</div>
+
+
+
+		<!--
+		<div id="contact-form">
+			 <iframe id="JotFormIFrame-93253070537354" title="General Inquiry Contact Form" onload="window.parent.scrollTo(0,0)" allowtransparency="true" allowfullscreen="true" allow="geolocation; microphone; camera" src="https://form.jotformeu.com/93253070537354" frameborder="0" style=" min-width: 100%; height:539px; border:none;" scrolling="no">		
+			 </iframe> 
+		</div>
+		-->
+		
+
+
+
+
+		<!--************************************************************* -->
+
+		<footer id="social-media">
+			<ul>
+				<li> <a href="#" target="_blank"> <i class="fab fa-twitter-square"> </i> </a> </li>
+				<li> <a href="#" target="_blank"> <i class="fab fa-facebook-square"> </i></a> </li>
+				<li> <a href="#" target="_blank"> <i class="fab fa-youtube-square"> </i> </a> </li>
+				<li> <a href="#" target="_blank"> <i class="fab fa-pinterest-square"> </i> </a> </li>
+
+			</ul>
+		<!--	<p>&copy; <script>document.write(new Date().getFullYear());</script> It sure is fun create websites.</p> -->
+			<p>&ldquo;Tell me and I forget, teach me and I may remember, involve me and I learn.&rdquo; &mdash;-Benjamin Franklin</p>
+		</footer>
+
+		<script type="text/javascript">
+	$(document).ready(function(){
+		$('a[href^="#"]').on('click',function (e) {e.preventDefault();
+
+		var target = this.hash;
+		var $target = $(target);
+
+		$('html, body').stop().animate({
+	        'scrollTop': $target.offset().top-100
+		}, 900, 'swing', function () {
+	        window.location.hash = target-100;
+		});
+	       });
+});
+</script>
+
+	</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
